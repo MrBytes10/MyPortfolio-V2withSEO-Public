@@ -27,7 +27,7 @@ const Expertise = () => {
       icon: <BrainCircuit className="h-5 w-5" />,
     },
     {
-      name: "Cloud Architecture",
+      name: "Blazor Web Server",
       level: 85,
       icon: <Cloud className="h-5 w-5" />,
     },
