@@ -6,9 +6,9 @@ import Timeline from "@/components/Timeline";
 const About = () => {
   const skills = [
     { name: "React/Next.js", level: 95 },
-    { name: "Python/Django", level: 90 },
+    { name: ".NET Core", level: 90 },
     { name: "AI/ML", level: 85 },
-    { name: ".NET Core", level: 80 },
+    { name: "Python/Django", level: 80 },
   ];
 
   return (

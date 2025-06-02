@@ -9,6 +9,7 @@ import {
   TestTube2,
   GitBranch,
   Cloud,
+  Terminal,
 } from "lucide-react";
 import Link from "next/link";
 
@@ -16,9 +17,9 @@ const Expertise = () => {
   const technicalSkills = [
     { name: "React/Next.js", level: 95, icon: <Code2 className="h-5 w-5" /> },
     {
-      name: "Python/Django",
+      name: "C# /.NET Core",
       level: 92,
-      icon: <Database className="h-5 w-5" />,
+      icon: <Terminal className="h-5 w-5" />,
     },
     {
       name: "AI/ML Engineering",
@@ -31,9 +32,9 @@ const Expertise = () => {
       icon: <Cloud className="h-5 w-5" />,
     },
     {
-      name: "DevOps & CI/CD",
+      name: "SQL /Database Management",
       level: 83,
-      icon: <GitBranch className="h-5 w-5" />,
+      icon: <Database className="h-5 w-5" />,
     },
     {
       name: "Data Analytics",
