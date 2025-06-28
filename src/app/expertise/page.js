@@ -56,7 +56,7 @@ const Expertise = () => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">
-            Technical Arsenal
+            Digital Skillset
           </h1>
           <p className="text-gray-400 text-xl">
             Full-stack capabilities powered by cutting-edge technologies

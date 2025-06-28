@@ -44,7 +44,7 @@ const Home = () => {
       <section className="py-20 bg-gradient-to-b from-black/95 to-teal-900/5">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16 bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">
-            Technical Arsenal
+            Digital Skillset
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {expertise.map((item, index) => (
@@ -66,7 +66,7 @@ const Home = () => {
       <section className="py-20">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-16 bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">
-            Signature Creations
+            Project Highlights
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             {/* Project cards with hover effects */}
