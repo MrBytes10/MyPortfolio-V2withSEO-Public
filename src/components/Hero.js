@@ -65,7 +65,7 @@ const Hero = () => {
           <a
             href="/projects"
             className="border border-teal-500 text-teal-300 hover:bg-teal-500/10 px-8 py-3 rounded-full transition-colors">
-            Explore Work
+            Explore My Work
           </a>
         </div>
       </div>

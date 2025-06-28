@@ -5,7 +5,7 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import { Terminal, Code2 } from "lucide-react";
 
-import logo from "../../public/images/mulutxlogo2.png"; // logo image
+import logo from "../../public/images/Logos/MuluTx-World-LogoCROPPED.png"; // logo image
 
 const Header = () => {
   return (
@@ -19,9 +19,9 @@ const Header = () => {
           <Image
             src={logo}
             alt="MulutX Logo"
-            width={162}
+            width={102}
             height={40}
-            className="inline-block mr-2 rounded-2xl"
+            className="inline-block mr-2 rounded-t-full hover:scale-105 transition-transform duration-300 ease-in-out"
           />
         </Link>
         <Navbar />
