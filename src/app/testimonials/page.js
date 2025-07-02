@@ -1,11 +1,16 @@
-// src/app/testimonials/page.js
+// src/.app/testimonials/page.js
 import React from "react";
 import { Quote, User, Briefcase, Star } from "lucide-react";
 import Image from "next/image";
 import LindaMoore from "../../../public/images/TestimonialsImages/LindaMoore.jpg";
 import CharlesTaylor from "../../../public/images/TestimonialsImages/CharlesTaylor.jpg";
 import MichaelChen from "../../../public/images/TestimonialsImages/michael.jpg";
-// Importing client images
+// Importing client logo images
+import AfmiLogo from "../../../public/images/ClientTestimonialsLogos/AfmiLogo.png";
+import ChankuBackCard from "../../../public/images/ClientTestimonialsLogos/ChankuEastAfricaBackCard.png";
+import ChankuGlobalLogo from "../../../public/images/ClientTestimonialsLogos/ChankuGlobalLOGO.jpg";
+import PanFramLogo from "../../../public/images/ClientTestimonialsLogos/PanframLOGO.png";
+import F6S from "../../../public/images/ClientTestimonialsLogos/f6s-ar21-modified.png";
 
 const testimonials = [
   {
@@ -27,6 +32,14 @@ const testimonials = [
     image: MichaelChen,
   },
 ];
+// Solution 4: Complete refactored section with consistent sizing
+const clientLogos = [
+  { src: ChankuBackCard, alt: "Chanku East Africa" },
+  { src: AfmiLogo, alt: "AFMI Limited" },
+  { src: ChankuGlobalLogo, alt: "Chanku Global" },
+  { src: MichaelChen, alt: "Client 4" }, // Note: This seems wrong - should be a logo
+  { src: PanFramLogo, alt: "MYA" },
+];
 
 const Testimonials = () => {
   return (
@@ -36,9 +49,9 @@ const Testimonials = () => {
           <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent">
             Client Voices
           </h1>
-          <p className="text-gray-400 text-xl">
+          {/* <p className="text-gray-400 text-xl">
             Trusted by innovators and industry leaders
-          </p>
+          </p> */}
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -84,11 +97,60 @@ const Testimonials = () => {
           ))}
         </div>
 
-        {/* Client Logos */}
+        {/* Client/Company worked with Logos .........................................................*/}
         <div className="mt-16 border-t border-teal-500/20 pt-16">
-          <h3 className="text-center text-gray-400 mb-8">Trusted By</h3>
+          <h3 className="text-center text-gray-400 mb-8">
+            {" "}
+            {/* Companies Worked With: */}
+            Trusted By:
+          </h3>
           <div className="flex flex-wrap justify-center gap-12 opacity-70">
-            {/* Add client logos as images */}
+            <div className="w-[120px] h-[60px] flex items-center justify-center bg-white/5 rounded-lg">
+              <Image
+                src={ChankuBackCard}
+                alt="Client 1"
+                width={120}
+                height={60}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+            <div className="w-[120px] h-[60px] flex items-center justify-center bg-white/5 rounded-lg">
+              <Image
+                src={AfmiLogo}
+                alt="Client 2"
+                width={120}
+                height={60}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+            <div className="w-[120px] h-[60px] flex items-center justify-center bg-white/5 rounded-lg">
+              <Image
+                src={F6S}
+                alt="Client 4"
+                width={120}
+                height={60}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+            <div className="w-[120px] h-[60px] flex items-center justify-center bg-white/5 rounded-lg">
+              <Image
+                src={ChankuGlobalLogo}
+                alt="Client 3"
+                width={120}
+                height={60}
+                className="object-contain max-w-full max-h-full"
+              />
+            </div>
+
+            <div className="w-[120px] h-[60px] flex items-center justify-center bg-white/5 rounded-lg">
+              <Image
+                src={PanFramLogo}
+                alt="Client 5"
+                width={120}
+                height={60}
+                className="object-contain min-w-full max-h-full"
+              />
+            </div>
           </div>
         </div>
       </div>
