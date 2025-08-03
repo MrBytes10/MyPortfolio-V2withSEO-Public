@@ -271,7 +271,7 @@ const Contact = () => {
 
       {showSuccess && (
         <div className="fixed bottom-4 right-4 bg-teal-500/20 text-teal-300 px-6 py-3 rounded-lg border border-teal-500/30">
-          Message sent successfully! I'll respond within 24 hours.
+          Message sent successfully! I&apos;ll respond within 24 hours.
         </div>
       )}
     </div>
