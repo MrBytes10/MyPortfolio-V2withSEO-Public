@@ -265,15 +265,40 @@ const Contact = () => {
                 </>
               )}
             </button>
+            {/* SUCCESS to show after the button (inside the form): */}
+            {showSuccess && (
+              <div className="mt-4 p-4 bg-teal-500/20 text-teal-300 rounded-lg border border-teal-500/30 text-center animate-in slide-in-from-top duration-300">
+                <div className="flex items-center justify-center gap-2">
+                  <div className="w-5 h-5 bg-teal-400 rounded-full flex items-center justify-center">
+                    <svg
+                      className="w-3 h-3 text-black"
+                      fill="currentColor"
+                      viewBox="0 0 20 20">
+                      <path
+                        fillRule="evenodd"
+                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                        clipRule="evenodd"
+                      />
+                    </svg>
+                  </div>
+                  <span>
+                    Message sent successfully! I&apos;ll respond within 24
+                    hours.
+                  </span>
+                </div>
+              </div>
+            )}
           </form>
         </div>
       </div>
 
-      {showSuccess && (
-        <div className="fixed bottom-4 right-4 bg-teal-500/20 text-teal-300 px-6 py-3 rounded-lg border border-teal-500/30">
+      {/* Success notification below button */}
+
+      {/* {showSuccess && (
+        <div className="fixed bottom-4 right-4 md:bottom-4 md:right-4 bottom-20 left-4 right-4 bg-teal-500/20 text-teal-300 px-6 py-3 rounded-lg border border-teal-500/30 z-50">
           Message sent successfully! I&apos;ll respond within 24 hours.
         </div>
-      )}
+      )} */}
     </div>
   );
 };
