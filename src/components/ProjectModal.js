@@ -11,7 +11,7 @@ const PurchaseCTA = ({ project }) => {
   const textBaseStyle = "text-gray-400 text-sm mb-4 max-w-lg mx-auto";
   const linkBaseStyle = "inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full font-semibold transition-colors";
 
-  const contextStatement = "I build all my projects with a product-focused mindset, considering real-world application and value. The following opportunities are available for this project:";
+  const contextStatement = "I build all projects with a product-focused mindset, considering real-world application and value. The following opportunities are available for this project:";
 
   const ctaContent = {
     investment: {
@@ -38,7 +38,7 @@ const PurchaseCTA = ({ project }) => {
         style: "border-gray-500/30 bg-gray-500/10",
         title: <><FileCode className="h-5 w-5" /> Source Code Available</>,
         titleColor: "text-gray-300",
-        description: "The source code for this project is available for a one-time licensing fee. Ideal for students, educational purposes, or as a foundation for derivative projects.",
+        description: "The source code for this project is available for a one-time licensing fee. Still, this can be customized to meet your specific business requirements.Ideal for students, educational purposes, or as a foundation for derivative projects.",
         buttonText: "Inquire About License",
         buttonIcon: <MessageSquarePlus className="h-4 w-4" />,
         buttonStyle: "bg-gray-500/20 text-gray-300 hover:bg-gray-500/30",

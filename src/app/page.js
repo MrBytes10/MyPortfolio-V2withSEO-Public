@@ -4,6 +4,8 @@ import React from "react";
 import Image from "next/image";
 import { Code, Cpu, Database, BrainCircuit,Code2, Zap } from "lucide-react";
 import dynamic from "next/dynamic";
+import MyTradeKit1 from "../../public/images/ProjectImages/MyTradeKit1.png";
+
 import ExpenseTracker from "../../public/images/ProjectImages/expense-tracker-webApp.jpg";
 import HospitalInsuranceCal from "../../public/images/ProjectImages/hospitalInsuranceDS.png";
 
@@ -72,12 +74,18 @@ const Home = () => {
             {/* Project cards with hover effects */}
             {[
               {
-                id: 1,
-                title: "AI Expense Tracker",
+                id: 14,
+                title: "TradeKit - AI Trading Platform",
                 category: "ai",
-                image: ExpenseTracker,
-                description: "Smart budgeting app with predictive analytics",
-                tech: ["React", "Python", "TensorFlow"],
+                images: [MyTradeKit1],
+                image: MyTradeKit1,
+                tech: ["Next.js", "TypeScript", "AI/ML"],
+                description:
+                  "A smart trading platform that analyzes and optimizes user-created trading strategies using AI.",
+                github: "https://github.com/MrBytes10/MyTradeKit-Frontend",
+                demo: "#",
+                status: "Prototype", // NEW: Status property
+                purchaseType: "investment",
               },
               {
                 id: 2,
