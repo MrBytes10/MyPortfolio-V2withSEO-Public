@@ -1,27 +1,126 @@
 // B:\mytestProjects\myPortfolioV2\myportfoliov2\src\components\ProjectModal.js
 import React, { useState, useEffect } from "react";
-import { X, ChevronLeft, ChevronRight, MessageSquarePlus } from "lucide-react";
+import {
+  X,
+  ChevronLeft,
+  ChevronRight,
+  MessageSquarePlus,
+  Lightbulb,
+  Briefcase,
+  FileCode,
+  DollarSign,
+  Handshake,
+} from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+// --- REFINED: The Professional CTA Component ---
+// This component uses recruiter-friendly language and professional icons.
+const PurchaseCTA = ({ project }) => {
+  const ctaBaseStyle = "mt-6 p-4 border rounded-lg text-center";
+  const titleBaseStyle =
+    "text-lg font-semibold mb-2 flex items-center justify-center gap-2";
+  const textBaseStyle = "text-gray-400 text-sm mb-4 max-w-lg mx-auto";
+  const linkBaseStyle =
+    "inline-flex items-center justify-center gap-2 px-6 py-2 rounded-full font-semibold transition-colors";
+
+  // The context statement that frames this section for recruiters
+  const contextStatement =
+    "I build all my projects with a product-focused mindset, considering real-world application and value. The following opportunities are available for this project:";
+
+  const ctaContent = {
+    investment: {
+      style: "border-cyan-500/30 bg-cyan-500/10",
+      title: (
+        <>
+          <Lightbulb className="h-5 w-5" /> Investment & Partnership
+        </>
+      ),
+      titleColor: "text-cyan-300",
+      description:
+        "This project is a functional prototype with significant market potential. I am open to discussing investment or collaboration to scale it into a full production-ready business.",
+      buttonText: "Discuss Partnership",
+      buttonIcon: <Handshake className="h-4 w-4" />,
+      buttonStyle: "bg-cyan-500/20 text-cyan-300 hover:bg-cyan-500/30",
+    },
+    licensing: {
+      style: "border-teal-500/30 bg-teal-500/10",
+      title: (
+        <>
+          <Briefcase className="h-5 w-5" /> Available for Business Licensing
+        </>
+      ),
+      titleColor: "text-teal-300",
+      description:
+        "This is a complete, deployable system ready for a real-world environment. It can be licensed as-is or customized to meet your specific business requirements.",
+      buttonText: "Request a Quote",
+      buttonIcon: <DollarSign className="h-4 w-4" />,
+      buttonStyle: "bg-teal-500/20 text-teal-300 hover:bg-teal-500/30",
+    },
+    sourceCode: {
+      style: "border-gray-500/30 bg-gray-500/10",
+      title: (
+        <>
+          <FileCode className="h-5 w-5" /> Source Code Available
+        </>
+      ),
+      titleColor: "text-gray-300",
+      description:
+        "The source code for this project is available for a one-time licensing fee. Ideal for students, educational purposes, or as a foundation for derivative projects.",
+      buttonText: "Inquire About License",
+      buttonIcon: <MessageSquarePlus className="h-4 w-4" />,
+      buttonStyle: "bg-gray-500/20 text-gray-300 hover:bg-gray-500/30",
+    },
+  };
+
+  const currentCta = ctaContent[project.purchaseType];
+
+  if (!currentCta) {
+    return null;
+  }
+
+  return (
+    <div className="mt-8 pt-6 border-t border-teal-500/20">
+      <p className="text-center text-gray-500 italic text-sm mb-4">
+        {contextStatement}
+      </p>
+      <div className={`${ctaBaseStyle} ${currentCta.style}`}>
+        <h4 className={`${titleBaseStyle} ${currentCta.titleColor}`}>
+          {currentCta.title}
+        </h4>
+        <p className={textBaseStyle}>{currentCta.description}</p>
+        <Link
+          href="/contact"
+          className={`${linkBaseStyle} ${currentCta.buttonStyle}`}>
+          {currentCta.buttonIcon}
+          {currentCta.buttonText}
+        </Link>
+      </div>
+    </div>
+  );
+};
 
 const ProjectModal = ({ project, onClose }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Reset index if project changes
   useEffect(() => {
     setCurrentIndex(0);
   }, [project]);
 
   const handlePrev = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
-    );
+    if (project.images && project.images.length > 1) {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === 0 ? project.images.length - 1 : prevIndex - 1
+      );
+    }
   };
 
   const handleNext = () => {
-    setCurrentIndex((prevIndex) =>
-      prevIndex === project.images.length - 1 ? 0 : prevIndex + 1
-    );
+    if (project.images && project.images.length > 1) {
+      setCurrentIndex((prevIndex) =>
+        prevIndex === project.images.length - 1 ? 0 : prevIndex + 1
+      );
+    }
   };
 
   const hasMultipleImages = project.images && project.images.length > 1;
@@ -35,7 +134,6 @@ const ProjectModal = ({ project, onClose }) => {
           <X className="h-6 w-6" />
         </button>
 
-        {/* --- NEW: Image Gallery --- */}
         <div className="relative w-full h-96 rounded-lg overflow-hidden flex-shrink-0">
           {project.images && project.images.length > 0 ? (
             <Image
@@ -109,24 +207,7 @@ const ProjectModal = ({ project, onClose }) => {
             )}
           </div>
 
-          {/* --- NEW: Investor/Client CTA --- */}
-          {project.isPrototype && (
-            <div className="mt-4 p-4 border border-cyan-500/30 bg-cyan-500/10 rounded-lg text-center">
-              <h4 className="font-semibold text-cyan-300 mb-2">
-                Interested in this project's future?
-              </h4>
-              <p className="text-gray-400 text-sm mb-4">
-                This project is currently in development. I am actively seeking
-                 Investors or Collaborators to help bring it to full production.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-flex items-center justify-center gap-2 bg-cyan-500/20 text-cyan-300 px-6 py-2 rounded-full font-semibold hover:bg-cyan-500/30 transition-colors">
-                <MessageSquarePlus className="h-4 w-4" />
-                Let's Discuss
-              </Link>
-            </div>
-          )}
+          <PurchaseCTA project={project} />
         </div>
       </div>
     </div>
