@@ -1,5 +1,6 @@
-// src/app/contact/page.js (updated with EmailJS)
 // B:\mytestProjects\myPortfolioV2\myportfoliov2\src\app\contact\page.js
+//  (updated with EmailJS)
+
 "use client";
 import React, { useRef, useState } from "react";
 import {

@@ -1,4 +1,4 @@
-// src/.app/testimonials/page.js
+// B:\mytestProjects\myPortfolioV2\myportfoliov2\src\app\testimonials\page.js
 import React from "react";
 import { Quote, User, Briefcase, Star } from "lucide-react";
 import Image from "next/image";

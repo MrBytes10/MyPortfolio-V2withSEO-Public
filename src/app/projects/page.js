@@ -1,4 +1,4 @@
-// src/app/projects/page.js
+// B:\mytestProjects\myPortfolioV2\myportfoliov2\src\app\projects\page.js
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
