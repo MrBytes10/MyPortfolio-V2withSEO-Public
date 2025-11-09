@@ -20,11 +20,13 @@ import TradingView from "../../../public/images/ProjectImages/tradingView5Indica
 import TukoNews from "../../../public/images/ProjectImages/tukoNewsNEEWWW.jpg";
 import VotingWebApp from "../../../public/images/ProjectImages/voting-webApp.jpg";
 import LinkedInEmailScraper from "../../../public/images/ProjectImages/proxycurlScraper.png";
+
+
 import MyTradeKit1 from "../../../public/images/ProjectImages/MyTradeKit1.png";
 import SchoolManagement1 from "../../../public/images/ProjectImages/SchoolSysAdmin1.PNG";
-import NyumbaRentals1 from "../../../public/images/ProjectImages/NyumbaRentals1.png";
-import NyumbaRentals2 from "../../../public/images/ProjectImages/NyumbaRentals2.png";
-import LuxeHaven1 from "../../../public/images/ProjectImages/LuxeHaven1.png";
+import NyumbaRentals1 from "../../../public/images/ProjectImages/NyumbaRentals1.PNG";
+import NyumbaRentals2 from "../../../public/images/ProjectImages/NyumbaRentals2.PNG";
+import LuxeHaven1 from "../../../public/images/ProjectImages/LuxeHaven1.PNG";
 
 const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
