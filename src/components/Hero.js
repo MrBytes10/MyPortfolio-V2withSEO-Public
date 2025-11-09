@@ -1,4 +1,4 @@
-// src/components/Hero.js
+// B:\mytestProjects\myPortfolioV2\myportfoliov2\src\components\Hero.js
 "use client";
 import React, { useEffect, useState } from "react";
 import { Terminal, Code2, Cpu, BrainCircuit } from "lucide-react";

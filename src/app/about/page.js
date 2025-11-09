@@ -1,4 +1,4 @@
-// src/app/about/page.js
+// B:\mytestProjects\myPortfolioV2\myportfoliov2\src\app\about\page.js
 import React from "react";
 import { GraduationCap, BrainCircuit, Code2, Rocket } from "lucide-react";
 import Timeline from "@/components/Timeline";

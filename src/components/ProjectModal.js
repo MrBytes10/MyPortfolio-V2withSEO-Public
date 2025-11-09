@@ -1,4 +1,4 @@
-// src/components/ProjectModal.js
+// B:\mytestProjects\myPortfolioV2\myportfoliov2\src\components\ProjectModal.js
 import React from "react";
 import { X } from "lucide-react";
 import Image from "next/image";

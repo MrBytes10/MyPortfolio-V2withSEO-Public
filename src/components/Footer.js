@@ -1,4 +1,4 @@
-// src/components/Footer.js
+// B:\mytestProjects\myPortfolioV2\myportfoliov2\src\components\Footer.js
 import React from "react";
 import Link from "next/link";
 import { Code2, Mail, Phone, Github, Linkedin, Briefcase } from "lucide-react";
