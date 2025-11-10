@@ -190,24 +190,92 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Contact Info Section (No changes here) */}
           <div className="space-y-8">
-             <div className="flex items-start gap-6">
-                <div className="p-3 bg-teal-500/10 rounded-lg"><Mail className="h-6 w-6 text-teal-400" /></div>
-                <div>
-                    <h3 className="text-xl font-semibold text-teal-300 mb-2">Email</h3>
-                    <p className="text-gray-400">a.m.ndeti@gmail.com</p>
-                </div>
+            <div className="flex items-start gap-6">
+              <div className="p-3 bg-teal-500/10 rounded-lg">
+                <Mail className="h-6 w-6 text-teal-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-teal-300 mb-2">
+                  Email
+                </h3>
+                <p className="text-gray-400">a.m.ndeti@gmail.com</p>
+              </div>
             </div>
             <div className="flex items-start gap-6">
-                <div className="p-3 bg-teal-500/10 rounded-lg"><Phone className="h-6 w-6 text-teal-400" /></div>
-                <div>
-                    <h3 className="text-xl font-semibold text-teal-300 mb-2">Phone</h3>
-                    <p className="text-gray-400">+254 742 125 032</p>
-                </div>
+              <div className="p-3 bg-teal-500/10 rounded-lg">
+                <Phone className="h-6 w-6 text-teal-400" />
+              </div>
+              <div>
+                <h3 className="text-xl font-semibold text-teal-300 mb-2">
+                  Phone
+                </h3>
+                <p className="text-gray-400">+254 742 125 032</p>
+              </div>
             </div>
             <div className="flex gap-6 mt-12">
-                <a href="https://www.linkedin.com/in/augastine-ndeti-290230175?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwZ6ut2hySHGJYPyJsjdf2A%3D%3D" target="_blank" rel="noopener noreferrer" className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors"><Linkedin className="h-6 w-6 text-teal-400" /></a>
-                <a href="https://github.com/MrBytes10" target="_blank" rel="noopener noreferrer" className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors"><Github className="h-6 w-6 text-teal-400" /></a>
-                {/* ... other social links ... */}
+              {/* ... All social links ... */}
+              {/*LinkedIn*/}
+              <a
+                href="https://www.linkedin.com/in/augastine-ndeti-290230175?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BwZ6ut2hySHGJYPyJsjdf2A%3D%3D"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors">
+                <Linkedin className="h-6 w-6 text-teal-400" />
+              </a>
+              {/*Github*/}
+              <a
+                href="https://github.com/MrBytes10"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors">
+                <Github className="h-6 w-6 text-teal-400" />
+              </a>
+              {/*Twitter*/}
+              <a
+                href="https://twitter.com/mulu_tx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors">
+                <Twitter className="h-6 w-6 text-teal-400" />
+              </a>
+              {/*TikTok*/}
+              <a
+                href="https://www.tiktok.com/@mulu_tx?is_from_webapp=1&sender_device=pc"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors">
+                <FontAwesomeIcon
+                  icon={faTiktok}
+                  className="h-6 w-6 text-teal-400"
+                />
+              </a>
+              {/*Instagram*/}
+              <a
+                href="https://www.instagram.com/mulu_tx/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors">
+                <Instagram className="h-6 w-6 text-teal-400" />
+              </a>
+              {/*Facebook*/}
+              <a
+                href="https://www.facebook.com/mulu.tx/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors">
+                <Facebook className="h-6 w-6 text-teal-400" />
+              </a>
+              {/*Discord*/}
+              <a
+                href="https://discordapp.com/users/961452033288843284"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors">
+                <FontAwesomeIcon
+                  icon={faDiscord}
+                  className="h-6 w-6 text-teal-400"
+                />
+              </a>
             </div>
           </div>
 
