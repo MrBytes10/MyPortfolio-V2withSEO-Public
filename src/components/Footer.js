@@ -76,7 +76,7 @@ const Footer = () => {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com/in/augastine-ndeti"
+                href="https://www.linkedin.com/in/augastine-ndeti-290230175/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-teal-500/10 rounded-lg hover:bg-teal-500/20 transition-colors text-teal-400">
