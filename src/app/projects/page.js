@@ -36,7 +36,7 @@ const Projects = () => {
     // --- AI/ML PROJECTS ---
     {
       id: 14,
-      title: "MyTradeKit - AI Trading Platform",
+      title: "TradeKit - AI Trading Platform",
       category: "ai",
       images: [MyTradeKit1],
       tech: ["Next.js", "TypeScript", "AI/ML"],
