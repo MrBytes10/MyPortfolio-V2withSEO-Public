@@ -5,7 +5,9 @@ import Image from "next/image";
 import Navbar from "./Navbar";
 import { Terminal, Code2 } from "lucide-react";
 
-import logo from "../../public/images/Logos/MuluTx-World-LogoCROPPED.png"; // logo image
+//import logo from "../../public/images/Logos/MuluTx-World-LogoCROPPED.png"; // logo image
+//import logo from "../../public/images/Logos/MuluTx-White- Intersecting GradientsCROPPED.png"; // logo image
+import logo from "../../public/images/Logos/MuluTx-V1-Black-IntersectingGradientsCROPPED.png"; // logo image
 
 const Header = () => {
   return (
@@ -21,7 +23,7 @@ const Header = () => {
             alt="MulutX Logo"
             width={102}
             height={40}
-            className="inline-block mr-2 rounded-t-full hover:scale-105 transition-transform duration-300 ease-in-out"
+            className="inline-block mr-2 rounded-md hover:scale-110 transition-transform duration-300 ease-in-out hover:drop-shadow-lg hover:drop-shadow-teal-500/50"
           />
         </Link>
         <Navbar />
