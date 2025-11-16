@@ -23,20 +23,28 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="grid grid-cols-2 gap-4">
-            <div className="space-y-3">
-              <h3 className="text-teal-300 font-semibold mb-2">Navigation</h3>
-              <ul className="space-y-2">
-                {["Home", "About", "Expertise"].map((item) => (
-                  <li key={item}>
-                    <Link
-                      href={`/${item.toLowerCase()}`}
-                      className="text-gray-400 hover:text-teal-300 text-sm transition-colors">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+           <div className="space-y-3">
+  <h3 className="text-teal-300 font-semibold mb-2">Navigation</h3>
+  <ul className="space-y-2">
+    {["Home", "About", "Expertise"].map((item) => {
+      const routes = {
+        Home: "/",
+        About: "/about",
+        Expertise: "/expertise"
+      };
+      
+      return (
+        <li key={item}>
+          <Link
+            href={routes[item]}
+            className="text-gray-400 hover:text-teal-300 text-sm transition-colors">
+            {item}
+          </Link>
+        </li>
+      );
+    })}
+  </ul>
+</div>
             <div className="space-y-3">
               <h3 className="text-teal-300 font-semibold mb-2">Connect</h3>
               <ul className="space-y-2">

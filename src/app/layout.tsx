@@ -96,7 +96,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} bg-black text-gray-300 antialiased flex flex-col min-h-screen`}>
         <Header />
-        <main className="flex-grow bg-gradient-to-b from-black via-teal-900/5 to-cyan-900/5">
+        {/* <main className="flex-grow bg-gradient-to-b from-black via-teal-900/5 to-cyan-900/5"> */}
+        {/* <main className="flex-grow bg-gradient-to-b from-black via-teal-900/20 to-cyan-900/20"> */}
+           <main className="flex-grow bg-black">
+
           {children}
         </main>
         <Footer />

@@ -51,7 +51,8 @@ const Expertise = () => {
   ];
 
   return (
-    <div className="pt-20 min-h-screen bg-gradient-to-b from-black to-teal-900/10">
+    // <div className="pt-20 min-h-screen bg-gradient-to-b from-black to-teal-900/10">
+    <div className="pt-20 min-h-screen bg-black">
       <div className="max-w-7xl mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="text-center mb-16">
