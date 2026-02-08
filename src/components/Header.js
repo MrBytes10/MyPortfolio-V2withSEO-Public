@@ -9,8 +9,8 @@ import { Terminal, Code2 } from "lucide-react";
 //import logo from "../../public/images/Logos/MuluTx-White- Intersecting GradientsCROPPED.png"; // logo image
 //import logo from "../../public/images/Logos/MuluTx-V1-Black-IntersectingGradientsCROPPED.png"; // logo image
 
-import logo from "../../public/images/Logos/MuluTx-V2-White-StylizedFlowCROPPED.svg"; // logo image
-//import logo from "../../public/images/Logos/Mulutx-v2-Logo1Black.svg"; // logo image
+//import logo from "../../public/images/Logos/MuluTx-V2-White-StylizedFlowCROPPED.svg"; // logo image
+import logo from "../../public/images/Logos/AugastineLogo22.png"; // logo image
 
 const Header = () => {
   return (
